@@ -1,0 +1,15 @@
+/home/pavel/Рабочий стол/HomeWork8/task60/bin/Debug/net7.0/task60
+/home/pavel/Рабочий стол/HomeWork8/task60/bin/Debug/net7.0/task60.deps.json
+/home/pavel/Рабочий стол/HomeWork8/task60/bin/Debug/net7.0/task60.runtimeconfig.json
+/home/pavel/Рабочий стол/HomeWork8/task60/bin/Debug/net7.0/task60.dll
+/home/pavel/Рабочий стол/HomeWork8/task60/bin/Debug/net7.0/task60.pdb
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.csproj.AssemblyReference.cache
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.GeneratedMSBuildEditorConfig.editorconfig
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.AssemblyInfoInputs.cache
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.AssemblyInfo.cs
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.csproj.CoreCompileInputs.cache
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.dll
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/refint/task60.dll
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.pdb
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/task60.genruntimeconfig.cache
+/home/pavel/Рабочий стол/HomeWork8/task60/obj/Debug/net7.0/ref/task60.dll

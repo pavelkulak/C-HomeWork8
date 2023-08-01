@@ -1,23 +1,32 @@
-﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+﻿// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4
-// В итоге получается вот такой массив:
-// 7 4 2 1
-// 9 5 3 2
-// 8 4 4 2
+// 5 2 6 7
+// Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+
 Console.Clear();
 int row = GetNum("Введите количество строк: ");
 int column = GetNum("Введите количество столбцов: ");
 int[,] array = GetArray(row, column);
+int minRowSum = int.MaxValue;
+int minRowIndex = -1;
 PrintArray(array);
 for (int i = 0; i < array.GetLength(0); i++)
 {
-    SortRowDescending(array, i);
+    int rowSum = CalculateRowSum(array, i);
+    if (rowSum < minRowSum)
+    {
+        minRowSum = rowSum;
+        minRowIndex = i;
+    }
 }
-Console.WriteLine("Массив после упорядочивания каждой строки по убыванию:");
-PrintArray(array);
+
+Console.WriteLine($"Строка с наименьшей суммой элементов: {minRowIndex + 1} строка");
+
+
 int GetNum(string message)
 {
     Console.Write(message);
@@ -47,24 +56,13 @@ void PrintArray(int[,] arr)
         Console.WriteLine();
     }
 }
-
-void SortRowDescending(int[,] arr, int rowIndex)
+int CalculateRowSum(int[,] arr, int rowIndex)
 {
+    int sum = 0;
     int columns = arr.GetLength(1);
-    int[] row = new int[columns];
-
-    // Копируем элементы строки в одномерный массив
     for (int j = 0; j < columns; j++)
     {
-        row[j] = arr[rowIndex, j];
+        sum += arr[rowIndex, j];
     }
-
-    // Сортируем одномерный массив по убыванию
-    Array.Sort(row, (x, y) => y.CompareTo(x));
-
-    // Копируем отсортированные элементы обратно в строку
-    for (int j = 0; j < columns; j++)
-    {
-        arr[rowIndex, j] = row[j];
-    }
+    return sum;
 }
